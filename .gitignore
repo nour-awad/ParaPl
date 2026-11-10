@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# ParaPl - C (OpenMP) simulation + Python analysis scripts
+# ---------------------------------------------------------------------------
+
+# ---- C build output ----
+build/
+*.o
+*.obj
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.dSYM/
+*.su
+*.gcno
+*.gcda
+*.gcov
+compile_commands.json
+.cache/
+
+# Binary built outside build/ by hand (e.g. `gcc ... -o platoon`)
+/platoon
+
+# ---- Profiling / debugging ----
+*.trace/
+perf.data*
+gmon.out
+callgrind.out.*
+massif.out.*
+core
+core.*
+
+# ---- Experiment output (regenerate with ./scripts/run_experiments.sh) ----
+# The final dataset used in the paper can be committed on purpose with:
+#   git add -f results/<file>
+results/
+
+# ---- Python (analysis/plots) ----
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# ---- OS / editors ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# ---- Office lock files (slides/papers kept next to the code) ----
+~$*
