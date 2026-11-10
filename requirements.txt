@@ -1,0 +1,3 @@
+# Analysis and plotting only (scripts/analyze.py). The simulation itself is C + OpenMP.
+numpy>=1.24
+matplotlib>=3.7
